@@ -1,42 +1,80 @@
+/* By Daniel McCashin */
 body {
-    font-family: Arial, sans-serif;
-    background: #f2f5f2;
-    margin: 0;
+	/* Add additional height to webpage to make it scroll a little past the content at the bottom of the page */
+	padding-bottom: 100px;
+	font-family: "Open Sans", sans-serif;
+	background-color: #F5F5F5;
+	color: #333333;
 }
 
-header {
-    background: #207567;
-    color: white;
-    padding: 15px;
+nav {
+	background-color: #4CAF50;
 }
 
-nav a {
-    color: white;
-    margin-right: 15px;
-    text-decoration: none;
+.nav-menu-link {
+	font-size: 20px;
+	text-decoration: none;
+	color: white;
 }
 
-h2 {
-    margin-left: 15px;
+.nav-menu-link:hover {
+	color: #42A5F5;
 }
 
-p {
-    margin-left: 15px;
+.navbar-links {
+	position: absolute;
+	right: 20px;
 }
 
-.card {
-    background: white;
-    padding: 15px;
-    margin: 15px;
-    border-radius: 8px;
-    box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+.navbar-links * {
+	padding-left: 10px;
+	padding-right: 10px;
 }
 
-footer {
-    background: #1a4d43;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    margin-top: 20px;
+.navbar-links a {
+	font-size: 20px;
+	text-decoration: none;
+	color: white;
 }
+
+.navbar-links a:hover {
+	color: #42A5F5;
+}
+
+.title {
+	font-family: "Roboto Slab", serif;
+	position: relative;
+	top: 20px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.title-images {
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.form-container .form-input, button, textarea {
+	width: 40%;
+	height: 80px;
+	background-color: #42A5F5;
+	padding: 5px;
+	margin-top: 10px;
+	/* Make answer box round */
+	border-radius: 3px;
+}
+
+/* Change colour of the placeholder text inside text fields */
+.form-input::placeholder {
+	color: white; 
+}
+
+.homepage-button {
+	/* Center button */
+	display: flex;
+	align-items: center;
+	width: 300px;
+	margin: auto;
+}
+
 
