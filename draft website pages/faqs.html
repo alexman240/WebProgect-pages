@@ -60,7 +60,26 @@
   <p class="text-center"></p>
 </footer>
 
+  <h2>Quick Survey</h2>
+<p>Did this page answer your questions?</p>
+
+<button onclick="surveyYes()">Yes</button>
+<button onclick="surveyNo()">No</button>
+
+<p id="survey-result"></p>
+
+<script>
+function surveyYes() {
+    document.getElementById("survey-result").innerHTML = "Thanks! Glad we could help.";
+}
+
+function surveyNo() {
+    document.getElementById("survey-result").innerHTML = "Thanks for the feedback. We will try to improve this page.";
+}
+</script>
+
 </body>
 </html>
+
 
 
